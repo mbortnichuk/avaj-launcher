@@ -1,14 +1,13 @@
 package mbortnic.Aircrafts;
 
-import mborntic.Interface.Flyable;
-import mborntic.Weather.WeatherTower;
-import mbortnic.Tower.Tower;
+import mbortnic.Interface.Flyable;
+import mbortnic.Weather.WeatherTower;
 
-public class Helicopter extends Aircraft implements Flyable {
+public class JetPlane extends Aircraft implements Flyable {
 
     private WeatherTower weatherTower;
 
-    Helicopter(String name, Coordinates coordinates) {
+    JetPlane(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 
@@ -18,7 +17,7 @@ public class Helicopter extends Aircraft implements Flyable {
 
     public void registerTower(WeatherTower weatherTower) {
         weatherTower.register(this);
-        String write = "Tower says: Helicopter#" + this.name + "(" + this.id + ") registered to weather tower.\n";
+        String write = "Tower says: JetPlane#" + this.name + "(" + this.id + ") registered to weather tower.\n";
         this.weatherTower = weatherTower;
         weatherTower.writeToFile("write", write);
     }
