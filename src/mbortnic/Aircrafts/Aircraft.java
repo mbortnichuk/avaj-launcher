@@ -20,7 +20,9 @@ public class Aircraft {
         return ;
     }
 
-    protected long nextId() {
-        return (++this.idCounter);
+    private long nextId() {
+        this.idCounter += 1;
+        return (this.idCounter);
+        // return (++this.idCounter);
     }
 }

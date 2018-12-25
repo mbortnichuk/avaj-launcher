@@ -17,13 +17,17 @@ public class Tower {
     private File file;
     private FileWriter writer;
 
+    public File getFile() {
+        return this.file;
+    }
+
     public void register(Flyable flyable) {
         if (observers.contains(flyable))
             return ;
         observers.add(flyable);
     }
 
-    public void unregiser(Flyable flyable) {
+    public void unregister(Flyable flyable) {
         if (unreg.contains(flyable))
             return;
         unreg.add(flyable);
@@ -46,7 +50,9 @@ public class Tower {
                     try {
                         writer.write(text);
                         writer.flush();
-                    } catch (Exception exception) {System.out.println("Couldn't write to file");}
+                    } catch (Exception exception) {
+                        System.out.println("Couldn't write to file.");
+                        }
                     break ;
             }
         } catch (Exception e)

@@ -16,7 +16,7 @@ public class WeatherProvider {
 
     public static WeatherProvider getProvider() {
         if (weatherProvider == null)
-        weatherProvider = new WeatherProvider();
+            weatherProvider = new WeatherProvider();
         return weatherProvider;
     }
 

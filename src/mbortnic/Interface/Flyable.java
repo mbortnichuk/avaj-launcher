@@ -1,6 +1,6 @@
 package mbortnic.Interface;
 
-import mborntic.Weather.WeatherTower;
+import mbortnic.Weather.WeatherTower;
 
 /*
 ** To handle all the coordanates.
