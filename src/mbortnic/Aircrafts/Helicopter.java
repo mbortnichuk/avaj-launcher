@@ -4,44 +4,51 @@ import mbortnic.Interface.Flyable;
 import mbortnic.Weather.WeatherTower;
 import mbortnic.Tower.Tower;
 
+/*
+** To handle Helicopter aircraft.
+*/
+
 public class Helicopter extends Aircraft implements Flyable {
 
+    // private properties
     private WeatherTower weatherTower;
 
+    // private variables
     Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 
+    // public methods
     public void updateConditions() {
-        String weatherTmp = weatherTower.getWeather(this.coordinates);
-        String wToFile = "";
-        String wToFileUnreg = "";
+        String weatherType = weatherTower.getWeather(this.coordinates);
+        String toFile = "";
+        String toFileUnreg = "";
         String tmp = "Helicopter#" + this.name + "(" + this.id + "): ";
 
-        switch (weatherTmp) {
+        switch (weatherType) {
             case "RAIN":
                 coordinates = new Coordinates(coordinates.getLongitude() + 5, coordinates.getLatitude(), coordinates.getHeight());
-                wToFile = tmp + "It's raining. Better watch out for lightnings. (Long +5)\n";
+                toFile = tmp + "It's raining. Better watch out for lightnings. (Long +5)\n";
                 break;
             case "SUN":
                 coordinates = new Coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), coordinates.getHeight() + 2);
-                wToFile = tmp + "Some sun light, lets take some pictures. (Long +10 H +2)\n";
+                toFile = tmp + "Some sun light, lets take some pictures. (Long +10 H +2)\n";
                 break;
             case "FOG":
                 coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 3);
-                wToFile = tmp + "I can't see anything! (H -3)\n";
+                toFile = tmp + "I can't see anything! (H -3)\n";
                 break;
             case "SNOW":
                 coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 12);
-                wToFile = tmp + "It's snowing out here. (H -12)\n";
+                toFile = tmp + "It's snowing out here. (H -12)\n";
                 break;
         }
 
-        weatherTower.writeToFile("write", wToFile);
+        weatherTower.writeToFile("write", toFile);
 
         if (this.coordinates.getHeight() <= 0) {
-            wToFileUnreg = "Tower says: Helicopter#" + this.name + "(" + this.id + ") unregistered from weather tower.\n";
-            weatherTower.writeToFile("write", wToFileUnreg);
+            toFileUnreg = "Tower says: Helicopter#" + this.name + "(" + this.id + ") unregistered from weather tower.\n";
+            weatherTower.writeToFile("write", toFileUnreg);
             weatherTower.unregister(this);
         }
     }

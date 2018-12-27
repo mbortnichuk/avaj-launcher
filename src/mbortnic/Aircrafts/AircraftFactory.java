@@ -2,8 +2,13 @@ package mbortnic.Aircrafts;
 
 import mbortnic.Interface.Flyable;
 
+/*
+** To handle aircraft factory.
+*/
+
 public class AircraftFactory {
 
+    // public methods
     public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
         Coordinates coords = new Coordinates(longitude, latitude, height);
         Helicopter helicopter;
@@ -21,7 +26,7 @@ public class AircraftFactory {
                 jetPlane = new JetPlane(name, coords);
                 return jetPlane;
             default:
-                System.out.println("Invalid Aircraft Type.");
+                System.out.println((char)27 + "[33mInvalid Aircraft Type." + (char)27 + "[0m");
                 return null;
         }
     }

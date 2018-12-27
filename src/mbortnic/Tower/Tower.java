@@ -11,23 +11,37 @@ import java.util.*;
 
 public class Tower {
 
+    // private properties
     private ArrayList<Flyable> observers = new ArrayList<>();
     private ArrayList<Flyable> unreg = new ArrayList<>();
 
-    private File file;
     private FileWriter writer;
+    private File file;
 
-    public File getFile() {
-        return this.file;
-    }
+    // public File getFile() {
+    //     return this.file;
+    // }
 
+    // public methods
     public void register(Flyable flyable) {
+        // try {
+        //     observers.add(flyable);
+        // } catch (Exception exception) {
+        //     System.out.println("Failed to register and Aircraft.");
+        // }
+
         if (observers.contains(flyable))
-            return ;
+            return;
         observers.add(flyable);
     }
 
     public void unregister(Flyable flyable) {
+        // try {
+        //     observers.remove(flyable);
+        // } catch (Exception exception) {
+        //     System.out.println("Failed to unregister an Aircraft.");
+        // }
+
         if (unreg.contains(flyable))
             return;
         unreg.add(flyable);
@@ -50,13 +64,13 @@ public class Tower {
                     try {
                         writer.write(text);
                         writer.flush();
-                    } catch (Exception exception) {
-                        System.out.println("Couldn't write to file.");
+                    } catch (Exception e) {
+                        System.out.println((char)27 + "[31mCouldn't write to file." + (char)27 + "[0m");
                         }
                     break ;
             }
-        } catch (Exception e)
-        {}
+        } catch (Exception e) {
+        }
     }
 
 }

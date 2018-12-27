@@ -1,11 +1,17 @@
 package mbortnic.Aircrafts;
 
+/*
+** To handle all coordinates.
+*/
+
 public class Coordinates {
     
-    private int longitude;
-    private int latitude;
+    // private properties
     private int height;
+    private int latitude;
+    private int longitude;
 
+    // default constructor
     Coordinates(int longitude, int latitude, int height) {
         if (height > 100)
             this.height = 100;
@@ -25,16 +31,17 @@ public class Coordinates {
         return ;
     }
 
-    public int getLongitude() {
-        return this.longitude;
+    // getters
+    public int getHeight() {
+        return this.height;
     }
 
     public int getLatitude() {
         return this.latitude;
     }
 
-    public int getHeight() {
-        return this.height;
+    public int getLongitude() {
+        return this.longitude;
     }
 
 }

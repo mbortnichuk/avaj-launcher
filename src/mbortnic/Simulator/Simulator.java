@@ -9,22 +9,23 @@ import java.io.*;
 
 public class Simulator {
 
+    // private properties
     private static WeatherTower weatherTower;
-    private static List<Flyable> flyableList = new ArrayList<>();
+    private static List<Flyable> aircrList = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         try {
-            File file = new File("mbortnic/avaj/src/scenario.txt");
+            // File file = new File("mbortnic/avaj/src/scenario.txt");
 
             BufferedReader reader = new BufferedReader(new FileReader(args[0]));
             String str = reader.readLine();
 
             if (str != null) {
                 weatherTower = new WeatherTower();
-                int simulation = Integer.parseInt(str.split(" ") [0]);
+                int sim = Integer.parseInt(str.split(" ")[0]);
 
-                if (simulation <= 0) {
-                    System.out.println("Simulation counter can't be 0 or less than 0.");
+                if (sim <= 0) {
+                    System.out.println((char)27 + "[33mSimulation counter can't be 0 or less than 0." + (char)27 + "[0m");
                     System.exit(1);
                 }
 
@@ -34,33 +35,34 @@ public class Simulator {
                     if (array.length == 5) {
                         Flyable flyable = AircraftFactory.newAircraft(str.split(" ")[0], str.split(" ")[1], Integer.parseInt(str.split(" ")[2]), 
                             Integer.parseInt(str.split(" ")[3]), Integer.parseInt(str.split(" ")[4]));
-                        flyableList.add(flyable);
+                        aircrList.add(flyable);
                     } else {
-                        System.out.println("Invalid file format.");
+                        System.out.println((char)27 + "[31mInvalid file format." + (char)27 + "[0m");
                     }
                 }
 
-                for (Flyable flyable : flyableList) {
+                for (Flyable flyable : aircrList) {
                     flyable.registerTower(weatherTower);
                 }
 
-                for (int i = 1; i <= simulation; i++) {
-                    String simulationWrite = "\nSimulation: " + i + "\n";
-                    weatherTower.writeToFile("write", simulationWrite);
+                for (int i = 1; i <= sim; i++) {
+                    String simToWrite = "\nSimulation: " + i + "\n";
+                    weatherTower.writeToFile("write", simToWrite);
                     weatherTower.changeWeather();
                 }
-                // weatherTower.getFile().delete();
+                reader.close();
             }
         } catch (FileNotFoundException exception) {
-            System.out.println("File not found " + "<" + args[0] + ">");
+            System.out.println((char)27 + "[31mFile not found " + "<" + args[0] + ">" + (char)27 + "[0m");
         } catch (IOException exception) {
-            System.out.println("Error while reading file " + args[0]);
+            System.out.println((char)27 + "[31mError while reading file " + args[0] + (char)27 + "[0m");
         } catch (ArrayIndexOutOfBoundsException exception) {
-            System.out.println("File specification error.");
+            System.out.println((char)27 + "[31mSpecify scenario file." + (char)27 + "[0m");
+            System.out.println((char)27 + "[33mUsage: java mbortnic.Simulator.Simulator [filename]" + (char)27 + "[0m");
         } catch (Exception exception) {
-            System.out.println("Unknown symbols in file " + "<" + exception + ">");
+            System.out.println((char)27 + "[31mUnknown symbols in file " + "<" + exception + ">" + (char)27 + "[0m");
         }
-
+       
         // mbortnic.Aircrafts.Coordinates coords = new mbortnic.Aircrafts.Coordinates(16, 17, 50);
         // mbortnic.Aircrafts.Helicopter.Aircraft craft = new mborntic.Aircrafts.Helicopter.Aircraft("Heli", coords);
 

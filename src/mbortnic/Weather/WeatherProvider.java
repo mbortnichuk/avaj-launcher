@@ -8,22 +8,24 @@ import java.util.Random;
 */
 
 public class WeatherProvider {
-    private static WeatherProvider weatherProvider = null;
+
+    // private properties
+    private static WeatherProvider weatherProvider = new WeatherProvider();
     private String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
 
-    private WeatherProvider(){
+    // private constructor
+    private WeatherProvider() {
     }
 
+    // public methods
     public static WeatherProvider getProvider() {
-        if (weatherProvider == null)
-            weatherProvider = new WeatherProvider();
         return weatherProvider;
     }
 
     public String getCurrentWeather(Coordinates coordinates) {
-        int randomGenerator = new Random().nextInt(weather.length);
-        String randomWeather = (weather[randomGenerator]);
-        return randomWeather;
+        int randomWeatherGenerator = new Random().nextInt(weather.length);
+        String randWeather = (weather[randomWeatherGenerator]);
+        return randWeather;
     }
 
 }
