@@ -10,188 +10,192 @@ Tower says: Helicopter#H4(9) registered to weather tower.
 
 Simulation: 1
 Baloon#B1(1): Some sun light, lets take some pictures. (Long +2 H +4)
-Baloon#B2(2): I can't see anything! (H -3)
-JetPlane#J1(3): I can't see anything!
-Helicopter#H1(4): I can't see anything! (H -3)
-Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
-Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
-Baloon#B3(7): It's raining. Better watch out for lightnings. (H -5)
-JetPlane#J2(8): It's snowing out here.
-Helicopter#H4(9): I can't see anything! (H -3)
-
-Simulation: 2
-Baloon#B1(1): It's snowing out here. (H -15)
 Baloon#B2(2): It's snowing out here. (H -15)
 JetPlane#J1(3): Some sun light, lets take some pictures.
-Helicopter#H1(4): I can't see anything! (H -3)
-Helicopter#H2(5): It's raining. Better watch out for lightnings. (Long +5)
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-Baloon#B3(7): It's raining. Better watch out for lightnings. (H -5)
+Helicopter#H1(4): Some sun light, lets take some pictures. (Long +10 H +2)
+Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
+Helicopter#H3(6): I can't see anything! (H -3)
+Baloon#B3(7): I can't see anything! (H -3)
 JetPlane#J2(8): It's raining. Better watch out for lightnings.
-Helicopter#H4(9): It's raining. Better watch out for lightnings. (Long +5)
-
-Simulation: 3
-Baloon#B1(1): I can't see anything! (H -3)
-Baloon#B2(2): It's snowing out here. (H -15)
-JetPlane#J1(3): Some sun light, lets take some pictures.
-Helicopter#H1(4): It's raining. Better watch out for lightnings. (Long +5)
-Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
-Helicopter#H3(6): I can't see anything! (H -3)
-Baloon#B3(7): It's raining. Better watch out for lightnings. (H -5)
-JetPlane#J2(8): It's snowing out here.
-Helicopter#H4(9): Some sun light, lets take some pictures. (Long +10 H +2)
-
-Simulation: 4
-Baloon#B1(1): Some sun light, lets take some pictures. (Long +2 H +4)
-Baloon#B2(2): I can't see anything! (H -3)
-JetPlane#J1(3): It's snowing out here.
-Helicopter#H1(4): It's raining. Better watch out for lightnings. (Long +5)
-Helicopter#H2(5): I can't see anything! (H -3)
-Helicopter#H3(6): It's snowing out here. (H -12)
-Baloon#B3(7): Some sun light, lets take some pictures. (Long +2 H +4)
-JetPlane#J2(8): Some sun light, lets take some pictures.
-Helicopter#H4(9): Some sun light, lets take some pictures. (Long +10 H +2)
-
-Simulation: 5
-Baloon#B1(1): It's snowing out here. (H -15)
-Tower says: Baloon#B1(1) unregistered from weather tower.
-Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
-JetPlane#J1(3): It's raining. Better watch out for lightnings.
-Helicopter#H1(4): I can't see anything! (H -3)
-Helicopter#H2(5): I can't see anything! (H -3)
-Helicopter#H3(6): I can't see anything! (H -3)
-Baloon#B3(7): It's snowing out here. (H -15)
-JetPlane#J2(8): I can't see anything!
 Helicopter#H4(9): It's snowing out here. (H -12)
 
-Simulation: 6
-Baloon#B2(2): It's raining. Better watch out for lightnings. (H -5)
-JetPlane#J1(3): It's snowing out here.
+Simulation: 2
+Baloon#B1(1): It's raining. Better watch out for lightnings. (H -5)
+Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
+JetPlane#J1(3): Some sun light, lets take some pictures.
 Helicopter#H1(4): I can't see anything! (H -3)
 Helicopter#H2(5): It's snowing out here. (H -12)
 Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
 Baloon#B3(7): It's raining. Better watch out for lightnings. (H -5)
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
 Helicopter#H4(9): I can't see anything! (H -3)
 
-Simulation: 7
-Baloon#B2(2): It's raining. Better watch out for lightnings. (H -5)
-JetPlane#J1(3): It's raining. Better watch out for lightnings.
-Helicopter#H1(4): It's snowing out here. (H -12)
-Tower says: Helicopter#H1(4) unregistered from weather tower.
+Simulation: 3
+Baloon#B1(1): Some sun light, lets take some pictures. (Long +2 H +4)
+Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
+JetPlane#J1(3): I can't see anything!
+Helicopter#H1(4): Some sun light, lets take some pictures. (Long +10 H +2)
 Helicopter#H2(5): I can't see anything! (H -3)
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
+Helicopter#H3(6): It's snowing out here. (H -12)
+Baloon#B3(7): It's snowing out here. (H -15)
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
+Helicopter#H4(9): Some sun light, lets take some pictures. (Long +10 H +2)
+
+Simulation: 4
+Baloon#B1(1): It's raining. Better watch out for lightnings. (H -5)
+Baloon#B2(2): It's snowing out here. (H -15)
+JetPlane#J1(3): It's raining. Better watch out for lightnings.
+Helicopter#H1(4): It's raining. Better watch out for lightnings. (Long +5)
+Helicopter#H2(5): I can't see anything! (H -3)
+Helicopter#H3(6): I can't see anything! (H -3)
+Baloon#B3(7): It's raining. Better watch out for lightnings. (H -5)
+JetPlane#J2(8): Some sun light, lets take some pictures.
+Helicopter#H4(9): I can't see anything! (H -3)
+
+Simulation: 5
+Baloon#B1(1): Some sun light, lets take some pictures. (Long +2 H +4)
+Baloon#B2(2): I can't see anything! (H -3)
+JetPlane#J1(3): It's snowing out here.
+Helicopter#H1(4): I can't see anything! (H -3)
+Helicopter#H2(5): I can't see anything! (H -3)
+Helicopter#H3(6): I can't see anything! (H -3)
 Baloon#B3(7): It's snowing out here. (H -15)
 Tower says: Baloon#B3(7) unregistered from weather tower.
 JetPlane#J2(8): Some sun light, lets take some pictures.
-Helicopter#H4(9): Some sun light, lets take some pictures. (Long +10 H +2)
+Helicopter#H4(9): It's raining. Better watch out for lightnings. (Long +5)
+
+Simulation: 6
+Baloon#B1(1): It's raining. Better watch out for lightnings. (H -5)
+Baloon#B2(2): It's raining. Better watch out for lightnings. (H -5)
+JetPlane#J1(3): I can't see anything!
+Helicopter#H1(4): It's raining. Better watch out for lightnings. (Long +5)
+Helicopter#H2(5): It's raining. Better watch out for lightnings. (Long +5)
+Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
+JetPlane#J2(8): I can't see anything!
+Helicopter#H4(9): It's raining. Better watch out for lightnings. (Long +5)
+
+Simulation: 7
+Baloon#B1(1): It's snowing out here. (H -15)
+Baloon#B2(2): I can't see anything! (H -3)
+JetPlane#J1(3): It's raining. Better watch out for lightnings.
+Helicopter#H1(4): I can't see anything! (H -3)
+Helicopter#H2(5): It's raining. Better watch out for lightnings. (Long +5)
+Helicopter#H3(6): I can't see anything! (H -3)
+JetPlane#J2(8): Some sun light, lets take some pictures.
+Helicopter#H4(9): It's snowing out here. (H -12)
 
 Simulation: 8
+Baloon#B1(1): I can't see anything! (H -3)
+Tower says: Baloon#B1(1) unregistered from weather tower.
 Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
-JetPlane#J1(3): I can't see anything!
+JetPlane#J1(3): It's snowing out here.
+Helicopter#H1(4): It's raining. Better watch out for lightnings. (Long +5)
 Helicopter#H2(5): It's raining. Better watch out for lightnings. (Long +5)
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
+Helicopter#H3(6): It's snowing out here. (H -12)
 JetPlane#J2(8): It's raining. Better watch out for lightnings.
 Helicopter#H4(9): Some sun light, lets take some pictures. (Long +10 H +2)
 
 Simulation: 9
-Baloon#B2(2): It's raining. Better watch out for lightnings. (H -5)
-JetPlane#J1(3): I can't see anything!
-Helicopter#H2(5): It's snowing out here. (H -12)
-Helicopter#H3(6): I can't see anything! (H -3)
-JetPlane#J2(8): I can't see anything!
-Helicopter#H4(9): I can't see anything! (H -3)
+Baloon#B2(2): I can't see anything! (H -3)
+JetPlane#J1(3): It's snowing out here.
+Helicopter#H1(4): I can't see anything! (H -3)
+Helicopter#H2(5): It's raining. Better watch out for lightnings. (Long +5)
+Helicopter#H3(6): It's snowing out here. (H -12)
+JetPlane#J2(8): Some sun light, lets take some pictures.
+Helicopter#H4(9): Some sun light, lets take some pictures. (Long +10 H +2)
 
 Simulation: 10
-Baloon#B2(2): It's snowing out here. (H -15)
+Baloon#B2(2): It's raining. Better watch out for lightnings. (H -5)
 JetPlane#J1(3): It's raining. Better watch out for lightnings.
+Helicopter#H1(4): I can't see anything! (H -3)
 Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
 Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): It's snowing out here.
 Helicopter#H4(9): I can't see anything! (H -3)
 
 Simulation: 11
-Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
-JetPlane#J1(3): It's raining. Better watch out for lightnings.
-Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
-Helicopter#H3(6): It's snowing out here. (H -12)
-JetPlane#J2(8): It's snowing out here.
-Helicopter#H4(9): I can't see anything! (H -3)
+Baloon#B2(2): It's snowing out here. (H -15)
+JetPlane#J1(3): I can't see anything!
+Helicopter#H1(4): It's raining. Better watch out for lightnings. (Long +5)
+Helicopter#H2(5): It's snowing out here. (H -12)
+Helicopter#H3(6): I can't see anything! (H -3)
+JetPlane#J2(8): Some sun light, lets take some pictures.
+Helicopter#H4(9): It's raining. Better watch out for lightnings. (Long +5)
 
 Simulation: 12
-Baloon#B2(2): I can't see anything! (H -3)
+Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
 JetPlane#J1(3): It's raining. Better watch out for lightnings.
+Helicopter#H1(4): I can't see anything! (H -3)
 Helicopter#H2(5): It's snowing out here. (H -12)
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
+JetPlane#J2(8): It's snowing out here.
 Helicopter#H4(9): It's snowing out here. (H -12)
 
 Simulation: 13
-Baloon#B2(2): It's snowing out here. (H -15)
-Tower says: Baloon#B2(2) unregistered from weather tower.
-JetPlane#J1(3): It's snowing out here.
+Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
+JetPlane#J1(3): It's raining. Better watch out for lightnings.
+Helicopter#H1(4): I can't see anything! (H -3)
 Helicopter#H2(5): I can't see anything! (H -3)
+Tower says: Helicopter#H2(5) unregistered from weather tower.
 Helicopter#H3(6): I can't see anything! (H -3)
-JetPlane#J2(8): It's snowing out here.
-Helicopter#H4(9): I can't see anything! (H -3)
+JetPlane#J2(8): Some sun light, lets take some pictures.
+Helicopter#H4(9): It's raining. Better watch out for lightnings. (Long +5)
 
 Simulation: 14
-JetPlane#J1(3): It's snowing out here.
-Helicopter#H2(5): I can't see anything! (H -3)
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): I can't see anything!
-Helicopter#H4(9): It's snowing out here. (H -12)
+Baloon#B2(2): It's snowing out here. (H -15)
+JetPlane#J1(3): Some sun light, lets take some pictures.
+Helicopter#H1(4): I can't see anything! (H -3)
+Tower says: Helicopter#H1(4) unregistered from weather tower.
+Helicopter#H3(6): I can't see anything! (H -3)
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
+Helicopter#H4(9): I can't see anything! (H -3)
 
 Simulation: 15
-JetPlane#J1(3): It's snowing out here.
-Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
+Baloon#B2(2): Some sun light, lets take some pictures. (Long +2 H +4)
+JetPlane#J1(3): I can't see anything!
 Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): I can't see anything!
 Helicopter#H4(9): It's snowing out here. (H -12)
 Tower says: Helicopter#H4(9) unregistered from weather tower.
 
 Simulation: 16
-JetPlane#J1(3): I can't see anything!
-Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): I can't see anything!
-
-Simulation: 17
-JetPlane#J1(3): I can't see anything!
-Helicopter#H2(5): I can't see anything! (H -3)
-Helicopter#H3(6): It's snowing out here. (H -12)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 18
+Baloon#B2(2): It's snowing out here. (H -15)
+Tower says: Baloon#B2(2) unregistered from weather tower.
 JetPlane#J1(3): Some sun light, lets take some pictures.
-Helicopter#H2(5): Some sun light, lets take some pictures. (Long +10 H +2)
-Helicopter#H3(6): I can't see anything! (H -3)
-JetPlane#J2(8): Some sun light, lets take some pictures.
-
-Simulation: 19
-JetPlane#J1(3): It's raining. Better watch out for lightnings.
-Helicopter#H2(5): It's snowing out here. (H -12)
-Tower says: Helicopter#H2(5) unregistered from weather tower.
 Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
 JetPlane#J2(8): I can't see anything!
 
-Simulation: 20
+Simulation: 17
+JetPlane#J1(3): It's snowing out here.
+Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
+JetPlane#J2(8): It's snowing out here.
+
+Simulation: 18
+JetPlane#J1(3): It's snowing out here.
+Helicopter#H3(6): I can't see anything! (H -3)
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
+
+Simulation: 19
 JetPlane#J1(3): It's snowing out here.
 Tower says: JetPlane#J1(3) unregistered from weather tower.
 Helicopter#H3(6): It's snowing out here. (H -12)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): I can't see anything!
+
+Simulation: 20
+Helicopter#H3(6): It's snowing out here. (H -12)
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 21
-Helicopter#H3(6): I can't see anything! (H -3)
+Helicopter#H3(6): It's snowing out here. (H -12)
 JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 22
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): Some sun light, lets take some pictures.
+Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
 
 Simulation: 23
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): It's snowing out here.
+Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 24
 Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
@@ -199,154 +203,135 @@ JetPlane#J2(8): I can't see anything!
 
 Simulation: 25
 Helicopter#H3(6): I can't see anything! (H -3)
-JetPlane#J2(8): Some sun light, lets take some pictures.
-
-Simulation: 26
-Helicopter#H3(6): It's snowing out here. (H -12)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 27
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): Some sun light, lets take some pictures.
-
-Simulation: 28
-Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
-JetPlane#J2(8): It's snowing out here.
-
-Simulation: 29
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): Some sun light, lets take some pictures.
-
-Simulation: 30
-Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
-JetPlane#J2(8): It's snowing out here.
-
-Simulation: 31
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 32
-Helicopter#H3(6): It's snowing out here. (H -12)
 JetPlane#J2(8): I can't see anything!
 
-Simulation: 33
+Simulation: 26
+Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
+JetPlane#J2(8): Some sun light, lets take some pictures.
+
+Simulation: 27
+Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
+
+Simulation: 28
 Helicopter#H3(6): I can't see anything! (H -3)
+JetPlane#J2(8): Some sun light, lets take some pictures.
+
+Simulation: 29
+Helicopter#H3(6): It's snowing out here. (H -12)
+Tower says: Helicopter#H3(6) unregistered from weather tower.
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
+
+Simulation: 30
+JetPlane#J2(8): Some sun light, lets take some pictures.
+
+Simulation: 31
 JetPlane#J2(8): It's snowing out here.
 
+Simulation: 32
+JetPlane#J2(8): Some sun light, lets take some pictures.
+
+Simulation: 33
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
+
 Simulation: 34
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
 JetPlane#J2(8): I can't see anything!
 
 Simulation: 35
-Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 36
-Helicopter#H3(6): It's snowing out here. (H -12)
-JetPlane#J2(8): I can't see anything!
-
-Simulation: 37
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
 JetPlane#J2(8): It's snowing out here.
 
+Simulation: 36
+JetPlane#J2(8): It's snowing out here.
+
+Simulation: 37
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
+
 Simulation: 38
-Helicopter#H3(6): It's raining. Better watch out for lightnings. (Long +5)
 JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 39
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
 
 Simulation: 40
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 41
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): I can't see anything!
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 42
-Helicopter#H3(6): It's snowing out here. (H -12)
-JetPlane#J2(8): I can't see anything!
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
 
 Simulation: 43
-Helicopter#H3(6): I can't see anything! (H -3)
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 44
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
 
 Simulation: 45
-Helicopter#H3(6): It's snowing out here. (H -12)
-JetPlane#J2(8): I can't see anything!
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 46
-Helicopter#H3(6): Some sun light, lets take some pictures. (Long +10 H +2)
-JetPlane#J2(8): I can't see anything!
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 47
-Helicopter#H3(6): I can't see anything! (H -3)
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
 
 Simulation: 48
-Helicopter#H3(6): It's snowing out here. (H -12)
-Tower says: Helicopter#H3(6) unregistered from weather tower.
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 49
 JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 50
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 51
-JetPlane#J2(8): I can't see anything!
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 52
 JetPlane#J2(8): I can't see anything!
 
 Simulation: 53
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 54
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 55
-JetPlane#J2(8): I can't see anything!
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 56
 JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 57
-JetPlane#J2(8): I can't see anything!
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 58
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 59
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 60
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 61
-JetPlane#J2(8): Some sun light, lets take some pictures.
-
-Simulation: 62
 JetPlane#J2(8): It's snowing out here.
 
+Simulation: 62
+JetPlane#J2(8): I can't see anything!
+
 Simulation: 63
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 64
 JetPlane#J2(8): It's snowing out here.
 
 Simulation: 65
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 66
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 67
 JetPlane#J2(8): Some sun light, lets take some pictures.
@@ -358,53 +343,56 @@ Simulation: 69
 JetPlane#J2(8): I can't see anything!
 
 Simulation: 70
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 71
-JetPlane#J2(8): Some sun light, lets take some pictures.
+JetPlane#J2(8): It's raining. Better watch out for lightnings.
 
 Simulation: 72
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 73
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 74
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 75
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 76
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
-
-Simulation: 77
 JetPlane#J2(8): It's snowing out here.
 
+Simulation: 74
+JetPlane#J2(8): It's snowing out here.
+
+Simulation: 75
+JetPlane#J2(8): It's snowing out here.
+
+Simulation: 76
+JetPlane#J2(8): I can't see anything!
+
+Simulation: 77
+JetPlane#J2(8): Some sun light, lets take some pictures.
+
 Simulation: 78
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 79
 JetPlane#J2(8): It's raining. Better watch out for lightnings.
 
 Simulation: 80
-JetPlane#J2(8): It's raining. Better watch out for lightnings.
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 81
-JetPlane#J2(8): It's snowing out here.
+JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 82
 JetPlane#J2(8): Some sun light, lets take some pictures.
 
 Simulation: 83
 JetPlane#J2(8): It's snowing out here.
-Tower says: JetPlane#J2(8) unregistered from weather tower.
 
 Simulation: 84
+JetPlane#J2(8): It's snowing out here.
 
 Simulation: 85
+JetPlane#J2(8): I can't see anything!
 
 Simulation: 86
+JetPlane#J2(8): It's snowing out here.
+Tower says: JetPlane#J2(8) unregistered from weather tower.
 
 Simulation: 87
 
