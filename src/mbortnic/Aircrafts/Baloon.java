@@ -27,20 +27,32 @@ public class Baloon extends Aircraft implements Flyable {
 
         switch (weatherType) {
             case "RAIN":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 5);
-                toFile = tmp + "It's raining. Better watch out for lightnings. (H -5)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() - 5);
+                toFile = tmp + "It's rain! It messed up my baloon!\n";
                 break;
             case "SUN":
-                coordinates = new Coordinates(coordinates.getLongitude() + 2, coordinates.getLatitude(), coordinates.getHeight() + 4);
-                toFile = tmp + "Some sun light, lets take some pictures. (Long +2 H +4)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude() + 2, 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() + 4);
+                toFile = tmp + "There is some sun, let's enjoy good weather!\n";
                 break;
             case "FOG":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 3);
-                toFile = tmp + "I can't see anything! (H -3)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() - 3);
+                toFile = tmp + "I hate fog, I cannot see anything at all!\n";
                 break;
             case "SNOW":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 15);
-                toFile = tmp + "It's snowing out here. (H -15)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() - 15);
+                toFile = tmp + "It's snowing! We should be more careful!\n";
                 break;
         }
 

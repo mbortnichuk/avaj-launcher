@@ -27,20 +27,32 @@ public class Helicopter extends Aircraft implements Flyable {
 
         switch (weatherType) {
             case "RAIN":
-                coordinates = new Coordinates(coordinates.getLongitude() + 5, coordinates.getLatitude(), coordinates.getHeight());
-                toFile = tmp + "It's raining. Better watch out for lightnings. (Long +5)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude() + 5, 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight());
+                toFile = tmp + "This rain is so depressing...\n";
                 break;
             case "SUN":
-                coordinates = new Coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), coordinates.getHeight() + 2);
-                toFile = tmp + "Some sun light, lets take some pictures. (Long +10 H +2)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude() + 10, 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() + 2);
+                toFile = tmp + "It's so hot!\n";
                 break;
             case "FOG":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 3);
-                toFile = tmp + "I can't see anything! (H -3)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() - 3);
+                toFile = tmp + "I see no ground!\n";
                 break;
             case "SNOW":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 12);
-                toFile = tmp + "It's snowing out here. (H -12)\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() - 12);
+                toFile = tmp + "Winter is coming!\n";
                 break;
         }
 

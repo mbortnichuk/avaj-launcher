@@ -26,20 +26,32 @@ public class JetPlane extends Aircraft implements Flyable {
 
         switch (weatherType) {
             case "RAIN":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 5, coordinates.getHeight());
-                toFile = tmp + "It's raining. Better watch out for lightnings.\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude() + 5, 
+                    coordinates.getHeight());
+                toFile = tmp + "Watch out for lightnings!\n";
                 break;
             case "SUN":
-                coordinates = new Coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), coordinates.getHeight() + 2);
-                toFile = tmp + "Some sun light, lets take some pictures.\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude() + 10, 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() + 2);
+                toFile = tmp + "This sun is getting to my eyes!\n";
                 break;
             case "FOG":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude() + 1, coordinates.getHeight());
-                toFile = tmp + "I can't see anything!\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude() + 1, 
+                    coordinates.getHeight());
+                toFile = tmp + "Gamn fog!\n";
                 break;
             case "SNOW":
-                coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 7);
-                toFile = tmp + "It's snowing out here.\n";
+                coordinates = new Coordinates(
+                    coordinates.getLongitude(), 
+                    coordinates.getLatitude(), 
+                    coordinates.getHeight() - 7);
+                toFile = tmp + "We are going to freeze!\n";
                 break;
         }
 

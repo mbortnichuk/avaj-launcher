@@ -11,11 +11,17 @@ public class Simulator {
 
     // private properties
     private static WeatherTower weatherTower;
-    private static List<Flyable> aircrList = new ArrayList<>();
+    private static List<Flyable> aircraftList = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
+        
         try {
             // File file = new File("mbortnic/avaj/src/scenario.txt");
+
+            if (args.length > 1) {
+                System.out.println((char)27 + "[31mUse only one scenario file as program agrument." + (char)27 + "[0m");
+                System.exit(1);
+            }
 
             BufferedReader reader = new BufferedReader(new FileReader(args[0]));
             String str = reader.readLine();
@@ -30,18 +36,23 @@ public class Simulator {
                 }
 
                 while ((str = reader.readLine()) != null) {
-                    String[] array = str.split(" ");
+                    String[] params = str.split(" ");
                     
-                    if (array.length == 5) {
-                        Flyable flyable = AircraftFactory.newAircraft(str.split(" ")[0], str.split(" ")[1], Integer.parseInt(str.split(" ")[2]), 
-                            Integer.parseInt(str.split(" ")[3]), Integer.parseInt(str.split(" ")[4]));
-                        aircrList.add(flyable);
+                    if (params.length == 5) {
+                        Flyable flyable = AircraftFactory.newAircraft(
+                            str.split(" ")[0], 
+                            str.split(" ")[1], 
+                            Integer.parseInt(str.split(" ")[2]), 
+                            Integer.parseInt(str.split(" ")[3]), 
+                            Integer.parseInt(str.split(" ")[4]));
+                        aircraftList.add(flyable);
                     } else {
-                        System.out.println((char)27 + "[31mInvalid file format." + (char)27 + "[0m");
+                        System.out.println((char)27 + "[33mData in file should look like this:\n[TYPE NAME LONGITUDE LATITUDE HEIGHT]" + (char)27 + "[0m");
+                        System.exit(1);
                     }
                 }
 
-                for (Flyable flyable : aircrList) {
+                for (Flyable flyable : aircraftList) {
                     flyable.registerTower(weatherTower);
                 }
 

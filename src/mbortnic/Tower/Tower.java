@@ -15,6 +15,8 @@ public class Tower {
     private ArrayList<Flyable> observers = new ArrayList<>();
     private ArrayList<Flyable> unreg = new ArrayList<>();
 
+    // private static final String SCENARIO = "simulation.txt";
+
     private FileWriter writer;
     private File file;
 
@@ -24,24 +26,12 @@ public class Tower {
 
     // public methods
     public void register(Flyable flyable) {
-        // try {
-        //     observers.add(flyable);
-        // } catch (Exception exception) {
-        //     System.out.println("Failed to register and Aircraft.");
-        // }
-
         if (observers.contains(flyable))
             return;
         observers.add(flyable);
     }
 
     public void unregister(Flyable flyable) {
-        // try {
-        //     observers.remove(flyable);
-        // } catch (Exception exception) {
-        //     System.out.println("Failed to unregister an Aircraft.");
-        // }
-
         if (unreg.contains(flyable))
             return;
         unreg.add(flyable);
