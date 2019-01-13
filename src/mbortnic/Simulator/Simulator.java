@@ -47,7 +47,7 @@ public class Simulator {
                             Integer.parseInt(str.split(" ")[4]));
                         aircraftList.add(flyable);
                     } else {
-                        System.out.println((char)27 + "[33mData in file should look like this:\n[TYPE NAME LONGITUDE LATITUDE HEIGHT]" + (char)27 + "[0m");
+                        System.out.println((char)27 + "[33mEach line of the file, except the first one, should look like this:\n[TYPE NAME LONGITUDE LATITUDE HEIGHT]" + (char)27 + "[0m");
                         System.exit(1);
                     }
                 }

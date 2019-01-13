@@ -23,9 +23,13 @@ public class WeatherProvider {
     }
 
     public String getCurrentWeather(Coordinates coordinates) {
-        int randomWeatherGenerator = new Random().nextInt(weather.length);
-        String randWeather = (weather[randomWeatherGenerator]);
-        return randWeather;
+        // int randomWeatherGenerator = new Random().nextInt(weather.length);
+        // String randWeather = (weather[randomWeatherGenerator]);
+        // return randWeather;
+
+        int total = coordinates.getHeight() + coordinates.getLatitude() + coordinates.getLongitude() + weather.length;
+        int index = total % weather.length;
+        return (weather[index]);
     }
 
 }

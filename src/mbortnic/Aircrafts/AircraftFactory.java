@@ -15,6 +15,12 @@ public class AircraftFactory {
         // JetPlane jetPlane;
         // Baloon baloon;
 
+        // if (name.trim().isEmpty())
+        // {
+        //     System.out.println("Invalid Aircraft name.");
+        //     System.exit(1);
+        // }
+
         switch (type) {
             case "Helicopter":
                 return new Helicopter(name, coords);
