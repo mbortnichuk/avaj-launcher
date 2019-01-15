@@ -36,7 +36,7 @@ public class Simulator {
                 int sim = Integer.parseInt(str.split(" ")[0]);
 
                 if (sim <= 0) {
-                    System.out.println((char)27 + "[33mSimulation counter can't be 0 or less than 0." + (char)27 + "[0m");
+                    System.out.println((char)27 + "[33mError: Simulation counter can't be 0 or less than 0." + (char)27 + "[0m");
                     System.exit(1);
                 }
 

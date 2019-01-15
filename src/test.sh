@@ -1,17 +1,17 @@
 #!/usr/bin/bash
 
-RED='\033[0;31m'
+RED='\033[1;31m'
 GREEN='\033[0;32m'
-NC='\033[0m' # Reset color
+RC='\033[0m' #Reset color
 
 for file in ./test_scenarios/*.txt
 do
 	if java mbortnic.Simulator.Simulator $file | grep -q "Error"; then
 		echo "${GREEN}mbortnic.Simulator.Simulator " $file
-		echo "OK!${NC}\n"
+		echo "OK!${RC}\n"
 	else
 		echo "${RED}mbortnic.Simulator.Simulator " $file
-		echo "WRONG!${NC} Press any key to continue"
+		echo "WRONG!${RC} Press any key to continue"
 		read _
 	fi
 done
