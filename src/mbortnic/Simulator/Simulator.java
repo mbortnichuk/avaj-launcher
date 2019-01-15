@@ -4,6 +4,7 @@ import mbortnic.Interface.Flyable;
 import mbortnic.Aircrafts.AircraftFactory;
 import mbortnic.Exceptions.UsageException;
 import mbortnic.Exceptions.EmptyFileException;
+// import mbortnic.Exceptions.BadCoordinatesException;
 import mbortnic.Weather.WeatherTower;
 
 import java.util.*;
@@ -83,7 +84,10 @@ public class Simulator {
         } catch (EmptyFileException exception) {
             System.out.println(exception.getMessage());
             System.exit(1);
-        }
+        } 
+        // catch (BadCoordinatesException exception) {
+        //     System.out.println(exception.getMessage());
+        // }
 
         // catch (ArrayIndexOutOfBoundsException exception) 
         // {
