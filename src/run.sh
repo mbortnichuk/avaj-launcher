@@ -13,13 +13,13 @@ printf "\033[33msimulation.txt file deleted.\n\n\033[0m"
 
 find . -name "*.java" > sources.txt
 javac -sourcepath . @sources.txt
-java mbortnic.Simulator.Simulator test_scenarios/Baloon2.txt
+java mbortnic.Simulator.Simulator test_scenarios/Empty.txt
 
 if [ -e simulation.txt ]
 then 
     printf "\033[1;32msimulation.txt file created.\n\033[0m"
 else
-    printf "\n\033[1;31mCould not create simulation.txt file\n\033[0m"
+    printf "\n\033[1;31mError: Could not create simulation.txt file\n\033[0m"
 fi
 
 # find . -name "*.class" -delete

@@ -3,6 +3,7 @@ package mbortnic.Simulator;
 import mbortnic.Interface.Flyable;
 import mbortnic.Aircrafts.AircraftFactory;
 import mbortnic.Exceptions.UsageException;
+import mbortnic.Exceptions.EmptyFileException;
 import mbortnic.Weather.WeatherTower;
 
 import java.util.*;
@@ -24,12 +25,16 @@ public class Simulator {
             //     System.exit(1);
             // }
 
+            BufferedReader reader = new BufferedReader(new FileReader(args[0]));
+            String str = reader.readLine();
+
             if (args.length == 0 || args.length > 1) {
                 throw new UsageException((char)27 + "[33mUsage: java mbortnic.Simulator.Simulator [filename]" + (char)27 + "[0m");
             }
 
-            BufferedReader reader = new BufferedReader(new FileReader(args[0]));
-            String str = reader.readLine();
+            if (str == null) {
+                throw new EmptyFileException((char)27 + "[031mError: Empty file." + (char)27 + "[0m");
+            }
 
             if (str != null) {
                 weatherTower = new WeatherTower();
@@ -75,7 +80,11 @@ public class Simulator {
         } catch (UsageException exception) {
             System.out.println(exception.getMessage());
             System.exit(1);
+        } catch (EmptyFileException exception) {
+            System.out.println(exception.getMessage());
+            System.exit(1);
         }
+
         // catch (ArrayIndexOutOfBoundsException exception) 
         // {
         //     System.out.println((char)27 + "[31mSpecify scenario file." + (char)27 + "[0m");
