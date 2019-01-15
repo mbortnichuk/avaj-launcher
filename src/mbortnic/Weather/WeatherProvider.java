@@ -27,9 +27,15 @@ public class WeatherProvider {
         // String randWeather = (weather[randomWeatherGenerator]);
         // return randWeather;
 
-        int total = coordinates.getHeight() + coordinates.getLatitude() + coordinates.getLongitude() + weather.length;
-        int index = total % weather.length;
-        return (weather[index]);
+        // int total = coordinates.getHeight() + coordinates.getLatitude() + coordinates.getLongitude() + weather.length;
+        // int index = total % weather.length;
+        // return (weather[index]);
+
+        int generator = new Random().nextInt(weather.length);
+        generator = (coordinates.getHeight() > 20) ? generator++ : generator--;
+        generator = (generator < 0) ? 3 : generator;
+        generator = (generator > 3) ? 0 : generator;
+        return weather[generator];
     }
 
 }

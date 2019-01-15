@@ -2,6 +2,7 @@ package mbortnic.Simulator;
 
 import mbortnic.Interface.Flyable;
 import mbortnic.Aircrafts.AircraftFactory;
+import mbortnic.Exceptions.UsageException;
 import mbortnic.Weather.WeatherTower;
 
 import java.util.*;
@@ -18,9 +19,13 @@ public class Simulator {
         try {
             // File file = new File("mbortnic/avaj/src/scenario.txt");
 
-            if (args.length > 1) {
-                System.out.println((char)27 + "[31mUse only one scenario file as program agrument." + (char)27 + "[0m");
-                System.exit(1);
+            // if (args.length > 1) {
+            //     System.out.println((char)27 + "[31mUse no more than one scenario file as program agrument." + (char)27 + "[0m");
+            //     System.exit(1);
+            // }
+
+            if (args.length == 0 || args.length > 1) {
+                throw new UsageException((char)27 + "[33mUsage: java mbortnic.Simulator.Simulator [filename]" + (char)27 + "[0m");
             }
 
             BufferedReader reader = new BufferedReader(new FileReader(args[0]));
@@ -47,7 +52,7 @@ public class Simulator {
                             Integer.parseInt(str.split(" ")[4]));
                         aircraftList.add(flyable);
                     } else {
-                        System.out.println((char)27 + "[33mEach line of the file, except the first one, should look like this:\n[TYPE NAME LONGITUDE LATITUDE HEIGHT]" + (char)27 + "[0m");
+                        System.out.println((char)27 + "[33mError: Each line of the file, except the first one, should look like this:\n[TYPE NAME LONGITUDE LATITUDE HEIGHT]" + (char)27 + "[0m");
                         System.exit(1);
                     }
                 }
@@ -64,14 +69,20 @@ public class Simulator {
                 reader.close();
             }
         } catch (FileNotFoundException exception) {
-            System.out.println((char)27 + "[31mFile not found " + "<" + args[0] + ">" + (char)27 + "[0m");
+            System.out.println((char)27 + "[31mError: File not found " + "<" + args[0] + ">" + (char)27 + "[0m");
         } catch (IOException exception) {
-            System.out.println((char)27 + "[31mError while reading file " + args[0] + (char)27 + "[0m");
-        } catch (ArrayIndexOutOfBoundsException exception) {
-            System.out.println((char)27 + "[31mSpecify scenario file." + (char)27 + "[0m");
-            System.out.println((char)27 + "[33mUsage: java mbortnic.Simulator.Simulator [filename]" + (char)27 + "[0m");
-        } catch (Exception exception) {
-            System.out.println((char)27 + "[31mUnknown symbols in file " + "<" + exception + ">" + (char)27 + "[0m");
+            System.out.println((char)27 + "[31mError: Error while reading file " + args[0] + (char)27 + "[0m");
+        } catch (UsageException exception) {
+            System.out.println(exception.getMessage());
+            System.exit(1);
+        }
+        // catch (ArrayIndexOutOfBoundsException exception) 
+        // {
+        //     System.out.println((char)27 + "[31mSpecify scenario file." + (char)27 + "[0m");
+        //     System.out.println((char)27 + "[33mUsage: java mbortnic.Simulator.Simulator [filename]" + (char)27 + "[0m");
+        // } 
+        catch (Exception exception) {
+            System.out.println((char)27 + "[31mError: Unknown symbols in file " + "<" + exception + ">" + (char)27 + "[0m");
         }
        
         // mbortnic.Aircrafts.Coordinates coords = new mbortnic.Aircrafts.Coordinates(16, 17, 50);

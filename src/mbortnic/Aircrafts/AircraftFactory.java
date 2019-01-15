@@ -38,7 +38,7 @@ public class AircraftFactory {
                 // jetPlane = new JetPlane(name, coords);
                 // return jetPlane;
             default:
-                System.out.println((char)27 + "[33mInvalid Aircraft Type." + (char)27 + "[0m");
+                System.out.println((char)27 + "[33mError: Invalid Aircraft Type." + (char)27 + "[0m");
                 System.exit(1);
                 return null;
         }
