@@ -4,7 +4,6 @@
 ./mbortnic/Aircrafts/Coordinates.java
 ./mbortnic/Aircrafts/Helicopter.java
 ./mbortnic/Aircrafts/JetPlane.java
-./mbortnic/Exceptions/BadCoordinatesException.java
 ./mbortnic/Exceptions/EmptyFileException.java
 ./mbortnic/Exceptions/UsageException.java
 ./mbortnic/Interface/Flyable.java

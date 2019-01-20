@@ -4,9 +4,7 @@ import mbortnic.Interface.Flyable;
 import mbortnic.Aircrafts.AircraftFactory;
 import mbortnic.Exceptions.UsageException;
 import mbortnic.Exceptions.EmptyFileException;
-// import mbortnic.Exceptions.BadCoordinatesException;
 import mbortnic.Weather.WeatherTower;
-
 import java.util.*;
 import java.io.*;
 
