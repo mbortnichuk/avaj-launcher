@@ -20,10 +20,6 @@ public class Tower {
     private FileWriter writer;
     private File file;
 
-    // public File getFile() {
-    //     return this.file;
-    // }
-
     // public methods
     public void register(Flyable flyable) {
         if (observers.contains(flyable))

@@ -11,32 +11,14 @@ public class AircraftFactory {
     // public methods
     public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
         Coordinates coords = new Coordinates(longitude, latitude, height);
-        // Helicopter helicopter;
-        // JetPlane jetPlane;
-        // Baloon baloon;
-
-        // if (name.trim().isEmpty())
-        // {
-        //     System.out.println("Invalid Aircraft name.");
-        //     System.exit(1);
-        // }
 
         switch (type) {
             case "Helicopter":
                 return new Helicopter(name, coords);
-
-                // helicopter = new Helicopter(name, coords);
-                // return helicopter;
             case "Baloon":
                 return new Baloon(name, coords);
-
-                // baloon = new Baloon(name, coords);
-                // return baloon;
             case "JetPlane":
                 return new JetPlane(name, coords);
-
-                // jetPlane = new JetPlane(name, coords);
-                // return jetPlane;
             default:
                 System.out.println((char)27 + "[33mError: Invalid Aircraft Type." + (char)27 + "[0m");
                 System.exit(1);

@@ -21,11 +21,6 @@ public class Aircraft {
         this.id = nextId();
     }
 
-    // protected constructors
-    // protected Aircraft() {
-    //     return ;
-    // }
-
     // private methods
     private long nextId() {
         this.idCounter += 1;

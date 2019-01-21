@@ -19,11 +19,6 @@ public class Simulator {
         try {
             // File file = new File("mbortnic/avaj/src/scenario.txt");
 
-            // if (args.length > 1) {
-            //     System.out.println((char)27 + "[31mUse no more than one scenario file as program agrument." + (char)27 + "[0m");
-            //     System.exit(1);
-            // }
-
             BufferedReader reader = new BufferedReader(new FileReader(args[0]));
             String str = reader.readLine();
 
@@ -48,15 +43,15 @@ public class Simulator {
                     String[] params = str.split(" ");
                     
                     if (params.length == 5) {
+                        String[] arg = str.split(" ");
                         Flyable flyable = AircraftFactory.newAircraft(
-                            str.split(" ")[0], 
-                            str.split(" ")[1], 
-                            Integer.parseInt(str.split(" ")[2]), 
-                            Integer.parseInt(str.split(" ")[3]), 
-                            Integer.parseInt(str.split(" ")[4]));
+                            arg[0], arg[1], 
+                            Integer.parseInt(arg[2]), 
+                            Integer.parseInt(arg[3]), 
+                            Integer.parseInt(arg[4]));
                         aircraftList.add(flyable);
                     } else {
-                        System.out.println((char)27 + "[33mError: Each line of the file, except the first one, should look like this:\n[TYPE NAME LONGITUDE LATITUDE HEIGHT]" + (char)27 + "[0m");
+                        System.out.println((char)27 + "[33mError: Each line of the file, except the first one, should look like this: [TYPE NAME LONGITUDE LATITUDE HEIGHT]" + (char)27 + "[0m");
                         System.exit(1);
                     }
                 }
@@ -82,19 +77,15 @@ public class Simulator {
         } catch (EmptyFileException exception) {
             System.out.println(exception.getMessage());
             System.exit(1);
-        } 
-        // catch (BadCoordinatesException exception) {
-        //     System.out.println(exception.getMessage());
-        // }
-
+        } catch (Exception exception) {
+            System.out.println((char)27 + "[31mError: Unknown symbols in file " + "<" + exception + ">" + (char)27 + "[0m");
+        }
         // catch (ArrayIndexOutOfBoundsException exception) 
         // {
         //     System.out.println((char)27 + "[31mSpecify scenario file." + (char)27 + "[0m");
         //     System.out.println((char)27 + "[33mUsage: java mbortnic.Simulator.Simulator [filename]" + (char)27 + "[0m");
         // } 
-        catch (Exception exception) {
-            System.out.println((char)27 + "[31mError: Unknown symbols in file " + "<" + exception + ">" + (char)27 + "[0m");
-        }
+        
        
         // mbortnic.Aircrafts.Coordinates coords = new mbortnic.Aircrafts.Coordinates(16, 17, 50);
         // mbortnic.Aircrafts.Helicopter.Aircraft craft = new mborntic.Aircrafts.Helicopter.Aircraft("Heli", coords);

@@ -26,21 +26,6 @@ public class Coordinates {
         if (longitude < 0)
             longitude = 0;
 
-        // if (height < 0 || longitude < 0 || latitude < 0) {
-        //     throw new BadCoordinatesException((char)27 + "[033mError: Bad coordinates.\n" + (char)27 + "[0m");
-        // }
-
-        // if (height < 0) {
-        //     height = 0;
-        //     throw new BadCoordinatesException((char)27 + "[033mError: Bad height." + (char)27 + "[0m");
-        // } else if (latitude < 0) {
-        //     latitude = 0;
-        //     throw new BadCoordinatesException((char)27 + "[033mError: Bad latitude." + (char)27 + "[0m");
-        // } else if (longitude < 0) {
-        //     longitude = 0;
-        //     throw new BadCoordinatesException((char)27 + "[033mError: Bad longitude." + (char)27 + "[0m");
-        // }
-
         this.longitude = longitude;
         this.latitude = latitude;
         return ;
