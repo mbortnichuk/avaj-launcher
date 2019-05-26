@@ -13,7 +13,7 @@ printf "\033[33msimulation.txt file deleted.\n\n\033[0m"
 
 find . -name "*.java" > sources.txt
 javac -sourcepath . @sources.txt
-java mbortnic.Simulator.Simulator good_test_scenarios/Good9.txt
+java mbortnic.Simulator.Simulator scenario.txt
 
 if [ -e simulation.txt ]
 then 
