@@ -13,7 +13,7 @@ If necessary, add more classes or include additional attributes, but changing ac
 git clone https://github.com/mbortnichuk/avaj-launcher.git
 cd avaj-launcher/src/
 ````
-Before launching make sure that `java` and `javac` commands are available in your terminal.
+Before launching make sure that you have Java installed and `java` & `javac` commands are available in your terminal. If not, click [here](https://java.com/en/download/help/mac_install.xml) to install Java for Mac.
 
 In the root of project folder run the commands given bellow:
 ```
