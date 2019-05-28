@@ -14,6 +14,7 @@ git clone https://github.com/mbortnichuk/avaj-launcher.git
 cd avaj-launcher/src/
 ````
 Before launching make sure that `java` and `javac` commands are available in your terminal.
+
 In the root of project folder run the commands given bellow:
 ```
 find -name *.java > sources.txt
